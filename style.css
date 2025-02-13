@@ -1,0 +1,46 @@
+
+
+#hero {
+    background-image: url('gym_bg.jpeg');
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+	background-position: center;
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between; /* Aligns to the edges */
+    align-items: center; /* Vertically centers */
+    padding: 0 20px; /* Add padding for spacing */
+}
+
+#herotext{
+    width: 100%;
+    height: 100%;
+}
+
+#herotextleft{
+    color: white;
+    margin-left: 30px;
+	width: 20%;
+}
+
+#herotextleft{
+    color: white;
+	width: 80%;
+}
+
+.form {
+    width: 87%;
+    margin-left: -11%;
+    margin-top: 7%;
+}
+
+
+h3{
+	color:white;
+}
+
+.mt-3{
+	color:white;
+}
