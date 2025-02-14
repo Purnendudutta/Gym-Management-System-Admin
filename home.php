@@ -13,10 +13,11 @@ include("auth.php");
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="gym_bg.jpeg">
 </head>
 
-<body style="background:url(gym_bg.jpg);">
+<body>
 	<nav class="navbar navbar-expand-md bg-dark navbar-dark">
 		<div class="container-fluid">
   <a class="navbar-brand" href="home.php">GYM MANAGEMENT SYSTEM</a>
@@ -24,11 +25,11 @@ include("auth.php");
 </div>
 </nav>
 
-<div class="row mt-3">
+<div class="row mt-3" id="hero">
   <div class="col-2">
     <div id="accordion">
     <div class="list-group">
-      <div class="list-group-item bg-dark">
+      <div class="list-group-item">
         <a class="collapsed nav-link text-light" data-toggle="collapse" href="#collapseTwo">
         <i class="fas fa-user-alt"></i>  GYM</a>
       </div>

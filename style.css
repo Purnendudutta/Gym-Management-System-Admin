@@ -1,13 +1,25 @@
+.navbar {
+    Width: 100%;
+}
 
+.list-group {
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+  }
+.list-group-item {
+    background-color: transparent !important;
+}
+.list-group-item:hover{
+    background-color: #00d9ff;
+}
 
 #hero {
     background-image: url('gym_bg.jpg');
-    width: 100%;
+    width: 101%;
     height: 800px;
     background-size: cover;
     background-repeat: no-repeat;
 	background-position: center;
-    margin-top: 0px;
     display: flex;
     justify-content: space-between; /* Aligns to the edges */
     align-items: center; /* Vertically centers */
