@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.1
+-- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Nov 23, 2019 at 05:06 AM
--- Server version: 10.4.8-MariaDB
--- PHP Version: 7.3.11
+-- Generation Time: Feb 14, 2025 at 06:32 AM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -33,7 +32,7 @@ CREATE TABLE `gym` (
   `gym_name` varchar(30) NOT NULL,
   `address` varchar(150) NOT NULL,
   `type` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `gym`
@@ -59,14 +58,14 @@ CREATE TABLE `login` (
   `id` int(10) NOT NULL,
   `uname` varchar(30) NOT NULL,
   `pwd` varchar(30) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `login`
 --
 
 INSERT INTO `login` (`id`, `uname`, `pwd`) VALUES
-(1, 'admin', 'admin');
+(1, 'purnendudutta521@gmail.com', 'Purnendu521@');
 
 -- --------------------------------------------------------
 
@@ -83,7 +82,7 @@ CREATE TABLE `member` (
   `mobileno` varchar(10) DEFAULT NULL,
   `pay_id` varchar(20) DEFAULT NULL,
   `trainer_id` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `member`
@@ -106,7 +105,7 @@ CREATE TABLE `payment` (
   `pay_id` varchar(20) NOT NULL,
   `amount` varchar(20) DEFAULT NULL,
   `gym_id` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `payment`
@@ -134,7 +133,7 @@ CREATE TABLE `trainer` (
   `time` varchar(10) DEFAULT NULL,
   `mobileno` varchar(10) DEFAULT NULL,
   `pay_id` varchar(20) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 COLLATE=latin1_swedish_ci;
 
 --
 -- Dumping data for table `trainer`
